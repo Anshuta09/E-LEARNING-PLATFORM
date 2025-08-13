@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" data-page="dashboard">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LearnIt — Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <a class="brand" href="index.html">🎓 LearnIt</a>
+      <nav class="nav">
+        <a href="index.html">Courses</a>
+        <a class="active" href="dashboard.html">Dashboard</a>
+        <button
+          id="themeToggle"
+          class="icon-btn"
+          aria-label="Toggle theme"
+          title="Toggle theme"
+        >
+          🌓
+        </button>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <h1>Your learning at a glance</h1>
+        <p class="muted">Track progress across all enrolled courses.</p>
+      </section>
+
+      <section class="dashboard-grid" id="dashboardGrid"></section>
+
+      <section class="card stats">
+        <h3>Learning Stats</h3>
+        <div class="stats-grid" id="statsGrid"></div>
+      </section>
+    </main>
+
+    <footer class="app-footer">
+      <small>© <span id="year"></span> LearnIt</small>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

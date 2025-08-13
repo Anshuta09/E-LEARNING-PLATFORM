@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" data-page="catalog">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LearnIt — Courses</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>"
+    />
+  </head>
+  <body>
+    <header class="app-header">
+      <a class="brand" href="index.html">🎓 LearnIt</a>
+      <nav class="nav">
+        <a href="index.html" class="active">Courses</a>
+        <a href="dashboard.html">Dashboard</a>
+        <button
+          id="themeToggle"
+          class="icon-btn"
+          aria-label="Toggle theme"
+          title="Toggle theme"
+        >
+          🌓
+        </button>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <h1>Grow your skills, one lesson at a time</h1>
+        <p class="muted">
+          Search, filter, enroll, and track your progress. Everything is saved
+          in your browser.
+        </p>
+        <div class="controls">
+          <input
+            id="searchInput"
+            class="input"
+            type="search"
+            placeholder="Search courses (e.g., JavaScript, UI, Python)"
+          />
+          <select id="categoryFilter" class="input">
+            <option value="all">All categories</option>
+          </select>
+          <select id="levelFilter" class="input">
+            <option value="all">All levels</option>
+            <option>Beginner</option>
+            <option>Intermediate</option>
+            <option>Advanced</option>
+          </select>
+          <button id="clearFilters" class="btn ghost">Clear</button>
+        </div>
+      </section>
+
+      <section>
+        <div id="courseGrid" class="grid"></div>
+        <div id="emptyState" class="empty hidden">
+          <h3>No courses found</h3>
+          <p class="muted">Try clearing filters or searching something else.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="app-footer">
+      <small>© <span id="year"></span> LearnIt. Progress stored locally.</small>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" data-page="course">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LearnIt — Course</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <a class="brand" href="index.html">🎓 LearnIt</a>
+      <nav class="nav">
+        <a href="index.html">Courses</a>
+        <a href="dashboard.html">Dashboard</a>
+        <button
+          id="themeToggle"
+          class="icon-btn"
+          aria-label="Toggle theme"
+          title="Toggle theme"
+        >
+          🌓
+        </button>
+      </nav>
+    </header>
+
+    <main class="container course-page">
+      <aside class="course-sidebar">
+        <button id="backBtn" class="btn ghost">← Back to catalog</button>
+        <div class="card sticky">
+          <h2 id="courseTitle">Loading…</h2>
+          <p id="courseMeta" class="muted"></p>
+          <div class="progress-wrap">
+            <div class="progress">
+              <div
+                id="courseProgressBar"
+                class="progress-bar"
+                style="width: 0%"
+              ></div>
+            </div>
+            <div class="progress-legend">
+              <span id="courseProgressText">0% complete</span>
+            </div>
+          </div>
+          <button id="enrollBtn" class="btn">Enroll</button>
+        </div>
+
+        <div class="card">
+          <h3>Curriculum</h3>
+          <ul id="lessonList" class="lesson-list"></ul>
+        </div>
+      </aside>
+
+      <section class="course-main">
+        <div id="videoWrap" class="video-wrap"></div>
+
+        <article class="card">
+          <h3>About this course</h3>
+          <p id="courseDesc" class="muted">Loading description…</p>
+        </article>
+
+        <article class="card">
+          <h3>Notes</h3>
+          <textarea
+            id="notesArea"
+            class="input"
+            rows="8"
+            placeholder="Write your notes… (autosaves)"
+          ></textarea>
+          <div class="row">
+            <button id="exportNotes" class="btn ghost">Export Notes</button>
+            <small class="muted">Notes are stored locally per course.</small>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="app-footer">
+      <small>© <span id="year"></span> LearnIt</small>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
