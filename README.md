@@ -19,3 +19,4 @@ HTML5, CSS3, JavaScript, Local API
 
 
 *OUTPUT*
+<img width="1883" height="835" alt="Image" src="https://github.com/user-attachments/assets/0dd3ac58-f820-4295-bed0-17fda49f5196" />
